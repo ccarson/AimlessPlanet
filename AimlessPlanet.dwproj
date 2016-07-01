@@ -6,10 +6,38 @@
     <Name>AimlessPlanet.database</Name>
     <FullPath>AimlessPlanet.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Adventure Works DW2014.ds</Name>
+      <FullPath>Adventure Works DW2014.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Adventure Works DW2014.dsv</Name>
+      <FullPath>Adventure Works DW2014.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2014</Id>
+            <Name>Adventure Works DW2014</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.\SQL2014;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2014</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2014</Id>
+            <Name>Adventure Works DW2014</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DeploymentServerVersion>12.0</DeploymentServerVersion>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
